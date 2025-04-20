@@ -1,0 +1,100 @@
+{
+  "banner": {
+    "id": "banner-1",
+    "type": "video",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-living-room-with-a-modern-tv-setup-4925-large.mp4",
+    "poster": "https://assets.mixkit.co/videos/preview/mixkit-living-room-with-a-modern-tv-setup-4925-large.jpg",
+    "alt": "Modern living room with stylish furniture"
+  },
+  "items": [
+    {
+      "id": "item-1",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc",
+      "alt": "Green sofa in a bright living room",
+      "tags": [
+        { "id": "tag-1", "name": "Sofa", "x": 50, "y": 50 },
+        { "id": "tag-2", "name": "Living Room", "x": 70, "y": 30 }
+      ]
+    },
+    {
+      "id": "item-2",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+      "alt": "Modern kitchen with wooden countertops",
+      "tags": [
+        { "id": "tag-3", "name": "Kitchen", "x": 45, "y": 55 }
+      ]
+    },
+    {
+      "id": "item-3",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1540574163026-643ea20ade25",
+      "alt": "Minimal bedroom with white sheets"
+    },
+    {
+      "id": "ad-1",
+      "type": "ad",
+      "src": "https://via.placeholder.com/400x300/FF5733/FFFFFF?text=Special+Offer",
+      "alt": "Special furniture offer",
+      "link": "/offers/special"
+    },
+    {
+      "id": "item-4",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36",
+      "alt": "Dining table with chairs"
+    },
+    {
+      "id": "item-5",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e",
+      "alt": "Modern office desk setup"
+    },
+    {
+      "id": "item-6",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6",
+      "alt": "Cozy reading nook with bookshelves"
+    },
+    {
+      "id": "item-7",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92",
+      "alt": "Outdoor patio furniture"
+    },
+    {
+      "id": "ad-2",
+      "type": "ad",
+      "src": "https://via.placeholder.com/400x300/3358FF/FFFFFF?text=New+Collection",
+      "alt": "New furniture collection",
+      "link": "/collection/new"
+    },
+    {
+      "id": "item-8",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe",
+      "alt": "Home office with ergonomic chair"
+    },
+    {
+      "id": "item-9",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1616627561650-13c94a9bc692",
+      "alt": "Kid's bedroom with colorful design"
+    },
+    {
+      "id": "item-10",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1633505650207-85caf9fde227",
+      "alt": "Modern bathroom with walk-in shower"
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 3,
+    "hasNext": true,
+    "hasPrev": false,
+    "nextPageUrl": "next.json",
+    "prevPageUrl": null
+  }
+} 

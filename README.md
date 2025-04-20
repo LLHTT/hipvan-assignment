@@ -1,87 +1,119 @@
-# Welcome to React Router!
+# HipVan Frontend Engineer Assignment
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A responsive feed UI for a Frontend Engineer position at HipVan.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Project Overview
 
-## Features
+This project implements a responsive feed UI with the following features:
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Full-width video banner at the top (autoplays when in view)
+- Pinterest-style masonry image grid
+- Ads injected at Fibonacci positions
+- Pagination with local mock JSON files (current.json, next.json, prev.json)
+- Pull-to-refresh on mobile
+- Product tags and animated tooltips
+
+## Tech Stack
+
+- **Framework**: React with TypeScript
+- **Routing**: React Router v7
+- **Styling**: Tailwind CSS v4
+- **Build Tool**: Vite
+- **Code Quality**: ESLint, Prettier, TypeScript
+- **Git Hooks**: Husky, lint-staged, Commitlint
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js 18.x or higher
+- npm 7.x or higher
+
 ### Installation
 
-Install the dependencies:
-
 ```bash
+# Clone the repository
+git clone <repository-url>
+cd FE-assignment-HipVan
+
+# Install dependencies
 npm install
 ```
 
 ### Development
 
-Start the development server with HMR:
-
 ```bash
+# Start the development server
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+The application will be available at `http://localhost:5173`.
 
-## Building for Production
-
-Create a production build:
+### Building for Production
 
 ```bash
+# Build the application
 npm run build
+
+# Preview the production build
+npm run start
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+## Project Structure
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+src/
+├── components/     # Reusable UI components
+├── pages/          # Page components
+├── hooks/          # Custom React hooks
+├── utils/          # Utility functions
+├── styles/         # Global styles and Tailwind configuration
+├── data/           # Mock JSON data for pagination
+├── App.tsx         # Main App component
+└── main.tsx        # Application entry point
 ```
 
-## Styling
+## Features
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+### Video Banner
 
----
+The banner at the top of the feed plays automatically when it's in the viewport and pauses when scrolled out of view.
 
-Built with ❤️ using React Router.
+### Masonry Grid
+
+The image grid is implemented as a responsive Pinterest-style masonry layout using CSS Grid and column-count for optimal performance.
+
+### Fibonacci Ad Positions
+
+Ads are injected at Fibonacci positions (1, 2, 3, 5, 8...) within the grid to maintain a balance between content and advertisements.
+
+### Pagination
+
+The feed supports pagination through mock JSON files that simulate API responses:
+
+- `current.json`: Initial page data
+- `next.json`: Next page data
+- `prev.json`: Previous page data
+
+### Pull-to-Refresh
+
+On mobile devices, users can pull down to refresh the feed, providing a native app-like experience.
+
+### Interactive Tags (Bonus)
+
+Product tags can be toggled on images, displaying animated tooltips with product information.
+
+## Code Quality
+
+This project follows best practices for code quality and maintainability:
+
+- **ESLint**: JavaScript/TypeScript linting
+- **Prettier**: Code formatting
+- **TypeScript**: Static type checking
+- **Husky**: Git hooks for pre-commit validation
+- **lint-staged**: Run linters on staged files
+- **Commitlint**: Enforce conventional commit messages
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

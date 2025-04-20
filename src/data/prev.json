@@ -1,0 +1,31 @@
+{
+  "banner": {
+    "id": "banner-3",
+    "type": "video",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-interior-of-a-white-room-with-padded-headboard-168-large.mp4",
+    "poster": "https://assets.mixkit.co/videos/preview/mixkit-interior-of-a-white-room-with-padded-headboard-168-large.jpg",
+    "alt": "White bedroom with padded headboard"
+  },
+  "items": [
+    {"id": "item-21", "type": "image", "src": "https://images.unsplash.com/photo-1536858974309-9cad465a85d7", "alt": "Small apartment balcony with furniture"},
+    {"id": "item-22", "type": "image", "src": "https://images.unsplash.com/photo-1615713170963-2595d2c721ff", "alt": "TV stand and entertainment center", "tags": [{"id": "tag-6", "name": "TV Stand", "x": 50, "y": 45}]},
+    {"id": "item-23", "type": "image", "src": "https://images.unsplash.com/photo-1615529151169-7b1ff50dc7f2", "alt": "Cozy corner with armchair and bookshelf"},
+    {"id": "ad-5", "type": "ad", "src": "https://via.placeholder.com/400x300/FF33C7/FFFFFF?text=Limited+Time", "alt": "Limited time furniture offer", "link": "/offers/limited-time"},
+    {"id": "item-24", "type": "image", "src": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae", "alt": "Rustic wooden dining set"},
+    {"id": "item-25", "type": "image", "src": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe", "alt": "Modern hallway with console table"},
+    {"id": "item-26", "type": "image", "src": "https://images.unsplash.com/photo-1554295405-abb8fd54f153", "alt": "Bedroom with platform bed"},
+    {"id": "ad-6", "type": "ad", "src": "https://via.placeholder.com/400x300/33E5FF/000000?text=Clearance+Sale", "alt": "Clearance sale on furniture", "link": "/clearance-sale"},
+    {"id": "item-27", "type": "image", "src": "https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa", "alt": "Home office with modern desk and chair"},
+    {"id": "item-28", "type": "image", "src": "https://images.unsplash.com/photo-1564540586988-aa4e53c3d799", "alt": "Bathroom vanity with double sink"},
+    {"id": "item-29", "type": "image", "src": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d", "alt": "Outdoor deck with comfortable seating"},
+    {"id": "item-30", "type": "image", "src": "https://images.unsplash.com/photo-1505409859467-3a796fd5798e", "alt": "Kids playroom with colorful furniture"}
+  ],
+  "pagination": {
+    "currentPage": 3,
+    "totalPages": 3,
+    "hasNext": false,
+    "hasPrev": true,
+    "nextPageUrl": null,
+    "prevPageUrl": "next.json"
+  }
+} 
