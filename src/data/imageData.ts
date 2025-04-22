@@ -1,0 +1,92 @@
+interface ImageItem {
+  id: number;
+  src: string;
+  alt: string;
+  title?: string;
+  description?: string;
+}
+
+const imageData: ImageItem[] = [
+  {
+    id: 1,
+    src: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=800&auto=format&fit=crop',
+    alt: 'Modern living room interior',
+    title: 'Modern Living Room',
+    description: 'Minimalist design with natural light',
+  },
+  {
+    id: 2,
+    src: 'https://images.unsplash.com/photo-1571508601891-ca5e7a713859?w=800&auto=format&fit=crop',
+    alt: 'Bedroom with large windows',
+    title: 'Bright Bedroom',
+    description: 'Spacious bedroom with natural lighting',
+  },
+  {
+    id: 3,
+    src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop',
+    alt: 'Modern house exterior',
+    title: 'Contemporary Home',
+  },
+  {
+    id: 4,
+    src: 'https://images.unsplash.com/photo-1520453803296-c39eabe2dab4?w=800&auto=format&fit=crop',
+    alt: 'Kitchen with marble countertop',
+    title: 'Luxury Kitchen',
+    description: 'Open concept with high-end appliances',
+  },
+  {
+    id: 5,
+    src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&auto=format&fit=crop',
+    alt: 'Scandinavian dining area',
+    title: 'Dining Space',
+  },
+  {
+    id: 6,
+    src: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop',
+    alt: 'Home office setup',
+    title: 'Productive Workspace',
+    description: 'Ergonomic design for maximum productivity',
+  },
+  {
+    id: 7,
+    src: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop',
+    alt: 'Bathroom with bathtub',
+    title: 'Spa-like Bathroom',
+  },
+  {
+    id: 8,
+    src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop',
+    alt: 'Indoor plants in living room',
+    title: 'Green Living',
+    description: 'Incorporating nature into home design',
+  },
+  {
+    id: 9,
+    src: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&auto=format&fit=crop',
+    alt: 'Colorful accent wall',
+    title: 'Bold Accent Wall',
+  },
+  {
+    id: 10,
+    src: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&auto=format&fit=crop',
+    alt: 'Cozy reading nook',
+    title: 'Reading Corner',
+    description: 'Perfect spot for book lovers',
+  },
+  {
+    id: 11,
+    src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop',
+    alt: 'Mid-century modern furniture',
+    title: 'Retro Style',
+  },
+  {
+    id: 12,
+    src: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&auto=format&fit=crop',
+    alt: 'Outdoor patio furniture',
+    title: 'Outdoor Living',
+    description: 'Extending your living space outdoors',
+  },
+];
+
+export default imageData;
+export type { ImageItem };
