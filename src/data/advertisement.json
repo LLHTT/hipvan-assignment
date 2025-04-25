@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Summer Sale",
+    "description": "Get up to 50% off on all outdoor furniture",
+    "cta": "Shop Now",
+    "url": "/summer-sale"
+  },
+  {
+    "id": 2,
+    "title": "New Arrivals",
+    "description": "Check out our latest collection of modern furniture",
+    "cta": "Explore",
+    "url": "/new-arrivals"
+  },
+  {
+    "id": 3,
+    "title": "Limited Time Offer",
+    "description": "Free shipping on orders over $100",
+    "cta": "Learn More",
+    "url": "/offers"
+  },
+  {
+    "id": 4,
+    "title": "Kitchen Essentials",
+    "description": "Transform your kitchen with our premium collection",
+    "cta": "View Collection",
+    "url": "/kitchen"
+  },
+  {
+    "id": 5,
+    "title": "Design Services",
+    "description": "Get professional help for your interior design needs",
+    "cta": "Book Consultation",
+    "url": "/design-services"
+  },
+  {
+    "id": 6,
+    "title": "Clearance Sale",
+    "description": "Last chance to buy discontinued items",
+    "cta": "Shop Clearance",
+    "url": "/clearance"
+  },
+  {
+    "id": 7,
+    "title": "Member Exclusive",
+    "description": "Join our membership program for special discounts",
+    "cta": "Join Now",
+    "url": "/membership"
+  },
+  {
+    "id": 8,
+    "title": "Home Office Collection",
+    "description": "Boost your productivity with our ergonomic furniture",
+    "cta": "Shop Collection",
+    "url": "/home-office"
+  }
+]
