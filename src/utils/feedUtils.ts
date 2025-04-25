@@ -53,6 +53,8 @@ export const getRandomUnsplashImage = (): string => {
 };
 
 // Generate Fibonacci indices up to a limit
+// Time Complexity: O(log(limit)) - Fibonacci numbers grow exponentially
+// Space Complexity: O(log(limit))
 function getFibonacciIndices(limit: number) {
   const fib = [1, 2];
   while (true) {
@@ -64,6 +66,8 @@ function getFibonacciIndices(limit: number) {
 }
 
 // Group consecutive indices
+// Time Complexity: O(n) where n is the length of indices
+// Space Complexity: O(n)
 function groupSequentialIndices(indices: number[]) {
   const groups = [];
   let group = [indices[0]];
@@ -81,6 +85,8 @@ function groupSequentialIndices(indices: number[]) {
 }
 
 // Main utility: inject ads based on Fibonacci logic
+// Time Complexity: O(n) where n is the number of images
+// Space Complexity: O(n + m) where n is images.length and m is ads.length
 export default function injectAdsWithFibonacci(images: ImageItem[], ads: AdItem[]) {
   const fibIndices = getFibonacciIndices(images.length);
   const groups = groupSequentialIndices(fibIndices);
