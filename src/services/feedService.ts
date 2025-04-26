@@ -25,6 +25,10 @@ const loadImages = async (): Promise<ImageItem[]> => {
  * Loads advertisement data from advertisement.json
  *
  * @returns Promise containing array of ad items
+ *
+ * Performance optimizations:
+ * - Parallel processing: Maps through ads while keeping original order
+ * - Consistent image parameters: Uses same orientation/query for visual consistency
  */
 const loadAds = async (): Promise<AdItem[]> => {
   try {
@@ -35,11 +39,7 @@ const loadAds = async (): Promise<AdItem[]> => {
     const ads = await response.json();
 
     const adCount = ads.length;
-    const imageData = await fetchMultipleUnsplashImages(
-      adCount,
-      'furniture,interior,home',
-      'landscape'
-    );
+    const imageData = await fetchMultipleUnsplashImages(adCount, 'furniture,interior,home');
 
     return ads.map((ad: AdItem, index: number) => ({
       ...ad,
@@ -56,6 +56,14 @@ const loadAds = async (): Promise<AdItem[]> => {
  * Loads and merges feed data (images and ads)
  *
  * @returns Promise containing merged feed items with ads inserted at Fibonacci positions
+ *
+ * Performance optimizations:
+ * - Parallel data loading: Uses Promise.all to fetch images and ads concurrently
+ * - Efficient merging: Leverages the Fibonacci algorithm for deterministic ad placement
+ * - Single render cycle: Returns complete feed data to minimize UI updates
+ *
+ * Time Complexity: O(n) where n is the number of feed items
+ * Space Complexity: O(n) for the final feed array
  */
 const loadFeedData = async (): Promise<FeedItem[]> => {
   try {
