@@ -28,6 +28,7 @@ This project implements a responsive feed UI with the following features:
 
 - Node.js 18.x or higher
 - npm 7.x or higher
+- Unsplash API key (for advertisement images)
 
 ### Installation
 
@@ -39,6 +40,18 @@ cd FE-assignment-HipVan
 # Install dependencies
 npm install
 ```
+
+### Setting up Unsplash API
+
+1. Create an account at [Unsplash Developers](https://unsplash.com/developers)
+2. Register a new application to get an access key
+3. Create a `.env` file in the root directory with the following content:
+
+```
+VITE_UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
+```
+
+Replace `your_unsplash_access_key_here` with your actual Unsplash API access key.
 
 ### Development
 

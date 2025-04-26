@@ -1,5 +1,7 @@
 import injectAdsWithFibonacci from '../utils/feedUtils';
 import type { AdItem, FeedItem, ImageItem } from '../utils/feedUtils';
+import { fetchMultipleUnsplashImages } from '../utils/unsplashService';
+
 /**
  * Loads image data from current.json
  *
@@ -12,7 +14,6 @@ const loadImages = async (): Promise<ImageItem[]> => {
       throw new Error('Failed to load images');
     }
     const data = await response.json();
-    // Access the images array directly from the JSON structure
     return data.images;
   } catch (error) {
     console.error('Error loading images:', error);
@@ -31,7 +32,20 @@ const loadAds = async (): Promise<AdItem[]> => {
     if (!response.ok) {
       throw new Error('Failed to load advertisements');
     }
-    return await response.json();
+    const ads = await response.json();
+
+    const adCount = ads.length;
+    const imageData = await fetchMultipleUnsplashImages(
+      adCount,
+      'furniture,interior,home',
+      'landscape'
+    );
+
+    return ads.map((ad: AdItem, index: number) => ({
+      ...ad,
+      imageSrc: imageData[index].url,
+      imageAlt: imageData[index].alt,
+    }));
   } catch (error) {
     console.error('Error loading advertisements:', error);
     return [];

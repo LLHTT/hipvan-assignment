@@ -16,7 +16,7 @@ const AdCard = ({ ad }: AdCardProps) => {
       <div className="h-48 w-full overflow-hidden">
         <img
           src={ad.imageSrc}
-          alt={ad.title}
+          alt={ad.imageAlt || ad.title}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
         />
       </div>

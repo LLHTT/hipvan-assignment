@@ -7,7 +7,6 @@ interface FeedItemProps {
 }
 
 const FeedItem = ({ item }: FeedItemProps) => {
-  // Render AdCard for ad items, ImageCard for image items
   if (item.type === 'ad') {
     return <AdCard ad={item.content as AdItem} />;
   }
