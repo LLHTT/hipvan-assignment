@@ -1,0 +1,151 @@
+{
+  "video": {
+    "id": 1,
+    "src": "https://videos.pexels.com/video-files/7385122/7385122-uhd_2560_1440_30fps.mp4",
+    "alt": "Next Page Video",
+    "title": "Modern Interior Design",
+    "description": "Exploring contemporary home decoration trends"
+  },
+  "images": [
+    {
+      "id": 21,
+      "src": "https://images.unsplash.com/photo-1517097454893-e82cc34fe2f0?w=800&auto=format&fit=crop",
+      "alt": "Industrial style loft",
+      "title": "Industrial Chic",
+      "description": "Raw materials and exposed architectural elements"
+    },
+    {
+      "id": 22,
+      "src": "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800&auto=format&fit=crop",
+      "alt": "Bohemian living room",
+      "title": "Boho Living",
+      "description": "Eclectic and colorful bohemian style"
+    },
+    {
+      "id": 23,
+      "src": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&auto=format&fit=crop",
+      "alt": "Coastal style bedroom",
+      "title": "Beach Vibes",
+      "description": "Light and airy coastal inspired design"
+    },
+    {
+      "id": 24,
+      "src": "https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=800&auto=format&fit=crop",
+      "alt": "Smart kitchen appliances",
+      "title": "Tech Kitchen",
+      "description": "Modern kitchen with integrated technology"
+    },
+    {
+      "id": 25,
+      "src": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&auto=format&fit=crop",
+      "alt": "Tropical home garden",
+      "title": "Indoor Jungle",
+      "description": "Creating a lush indoor plant sanctuary"
+    },
+    {
+      "id": 26,
+      "src": "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=800&auto=format&fit=crop",
+      "alt": "Home gym setup",
+      "title": "Home Fitness",
+      "description": "Dedicated space for workout routines"
+    },
+    {
+      "id": 27,
+      "src": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop",
+      "alt": "Luxury apartment view",
+      "title": "City Living",
+      "description": "Urban apartment with panoramic views"
+    },
+    {
+      "id": 28,
+      "src": "https://images.unsplash.com/photo-1617850687040-944724c8b6e2?w=800&auto=format&fit=crop",
+      "alt": "Children's playroom",
+      "title": "Kid-Friendly Spaces",
+      "description": "Creative and functional design for children"
+    },
+    {
+      "id": 29,
+      "src": "https://images.unsplash.com/photo-1582037928769-71e7593218e7?w=800&auto=format&fit=crop",
+      "alt": "Small space solutions",
+      "title": "Compact Living",
+      "description": "Maximizing functionality in small homes"
+    },
+    {
+      "id": 30,
+      "src": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&auto=format&fit=crop",
+      "alt": "Luxury bathroom",
+      "title": "Spa Bathroom",
+      "description": "Creating a home spa experience"
+    },
+    {
+      "id": 31,
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&auto=format&fit=crop",
+      "alt": "Home bar setup",
+      "title": "Entertainment Space",
+      "description": "Stylish home bar for entertaining guests"
+    },
+    {
+      "id": 32,
+      "src": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=800&auto=format&fit=crop",
+      "alt": "Farmhouse kitchen",
+      "title": "Country Kitchen",
+      "description": "Traditional design with modern comfort"
+    },
+    {
+      "id": 33,
+      "src": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&auto=format&fit=crop",
+      "alt": "Sustainable home features",
+      "title": "Eco-friendly Living",
+      "description": "Sustainable materials and energy-efficient design"
+    },
+    {
+      "id": 34,
+      "src": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&auto=format&fit=crop",
+      "alt": "Minimalist home office",
+      "title": "Focused Workspace",
+      "description": "Clutter-free environment for productivity"
+    },
+    {
+      "id": 35,
+      "src": "https://images.unsplash.com/photo-1615800009474-77897a866aab?w=800&auto=format&fit=crop",
+      "alt": "Multi-functional furniture",
+      "title": "Versatile Pieces",
+      "description": "Furniture that serves multiple purposes"
+    },
+    {
+      "id": 36,
+      "src": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&auto=format&fit=crop",
+      "alt": "Open concept living",
+      "title": "Flowing Spaces",
+      "description": "Seamless transition between living areas"
+    },
+    {
+      "id": 37,
+      "src": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800&auto=format&fit=crop",
+      "alt": "Outdoor kitchen setup",
+      "title": "Outdoor Cooking",
+      "description": "Extending your kitchen to the outdoors"
+    },
+    {
+      "id": 38,
+      "src": "https://images.unsplash.com/photo-1595514535719-0e8e5fc8c5bd?w=800&auto=format&fit=crop",
+      "alt": "Cozy reading corner",
+      "title": "Book Nook",
+      "description": "The perfect corner for relaxation"
+    },
+    {
+      "id": 39,
+      "src": "https://images.unsplash.com/photo-1616137358732-ccbd8ba04829?w=800&auto=format&fit=crop",
+      "alt": "Modern entryway",
+      "title": "Welcoming Entry",
+      "description": "First impressions matter in home design"
+    },
+    {
+      "id": 40,
+      "src": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
+      "alt": "Biophilic design elements",
+      "title": "Nature Inspired",
+      "description": "Bringing the outdoors inside"
+    }
+  ]
+}

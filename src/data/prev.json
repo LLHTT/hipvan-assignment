@@ -1,0 +1,151 @@
+{
+  "video": {
+    "id": 2,
+    "src": "https://videos.pexels.com/video-files/856192/856192-hd_1920_1080_30fps.mp4",
+    "alt": "Previous Page Video",
+    "title": "Classic Interior Design",
+    "description": "Timeless home design principles"
+  },
+  "images": [
+    {
+      "id": 41,
+      "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
+      "alt": "Art deco inspired living room",
+      "title": "Art Deco Style",
+      "description": "Geometric patterns and bold colors"
+    },
+    {
+      "id": 42,
+      "src": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&auto=format&fit=crop",
+      "alt": "Home entertainment system",
+      "title": "Home Theater",
+      "description": "Creating the ultimate movie experience at home"
+    },
+    {
+      "id": 43,
+      "src": "https://images.unsplash.com/photo-1558882224-dda166733046?w=800&auto=format&fit=crop",
+      "alt": "Mediterranean style patio",
+      "title": "Mediterranean Vibes",
+      "description": "Warm tones and natural materials"
+    },
+    {
+      "id": 44,
+      "src": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&auto=format&fit=crop",
+      "alt": "Luxurious bedroom",
+      "title": "Master Suite",
+      "description": "Creating a hotel-like bedroom experience"
+    },
+    {
+      "id": 45,
+      "src": "https://images.unsplash.com/photo-1537726235470-8504e3beef77?w=800&auto=format&fit=crop",
+      "alt": "Victorian style interior",
+      "title": "Victorian Elegance",
+      "description": "Historic charm with modern conveniences"
+    },
+    {
+      "id": 46,
+      "src": "https://images.unsplash.com/photo-1616137355422-a0599cc1831a?w=800&auto=format&fit=crop",
+      "alt": "Home music studio",
+      "title": "Music Corner",
+      "description": "Dedicated space for musicians"
+    },
+    {
+      "id": 47,
+      "src": "https://images.unsplash.com/photo-1609347744403-c811337f8f01?w=800&auto=format&fit=crop",
+      "alt": "Japanese inspired interior",
+      "title": "Japanese Minimalism",
+      "description": "Zen-inspired tranquil spaces"
+    },
+    {
+      "id": 48,
+      "src": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&auto=format&fit=crop",
+      "alt": "Smart lighting system",
+      "title": "Lighting Design",
+      "description": "The art of illuminating your home"
+    },
+    {
+      "id": 49,
+      "src": "https://images.unsplash.com/photo-1616593969747-4797dc75033e?w=800&auto=format&fit=crop",
+      "alt": "Luxury walk-in closet",
+      "title": "Dream Closet",
+      "description": "Organized storage for fashion enthusiasts"
+    },
+    {
+      "id": 50,
+      "src": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=800&auto=format&fit=crop",
+      "alt": "Rustic kitchen design",
+      "title": "Country Cooking",
+      "description": "Warm and inviting cooking spaces"
+    },
+    {
+      "id": 51,
+      "src": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=800&auto=format&fit=crop",
+      "alt": "Vegetable garden setup",
+      "title": "Home Grown",
+      "description": "Growing your own produce at home"
+    },
+    {
+      "id": 52,
+      "src": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&auto=format&fit=crop",
+      "alt": "Vintage inspired decor",
+      "title": "Vintage Charm",
+      "description": "Incorporating antiques into modern spaces"
+    },
+    {
+      "id": 53,
+      "src": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&auto=format&fit=crop",
+      "alt": "Nursery room design",
+      "title": "Baby's Room",
+      "description": "Creating a safe and stimulating environment"
+    },
+    {
+      "id": 54,
+      "src": "https://images.unsplash.com/photo-1616137355262-9d8e5f71d023?w=800&auto=format&fit=crop",
+      "alt": "Pet-friendly home design",
+      "title": "Pet Spaces",
+      "description": "Designing with furry friends in mind"
+    },
+    {
+      "id": 55,
+      "src": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=800&auto=format&fit=crop",
+      "alt": "Custom built shelving",
+      "title": "Storage Solutions",
+      "description": "Beautiful and functional organization"
+    },
+    {
+      "id": 56,
+      "src": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&auto=format&fit=crop",
+      "alt": "Seasonal home decor",
+      "title": "Seasonal Updates",
+      "description": "Refreshing your space throughout the year"
+    },
+    {
+      "id": 57,
+      "src": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&auto=format&fit=crop",
+      "alt": "Handicraft home decor",
+      "title": "Artisan Touch",
+      "description": "Handmade elements that add character"
+    },
+    {
+      "id": 58,
+      "src": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&auto=format&fit=crop",
+      "alt": "Window treatments",
+      "title": "Window Design",
+      "description": "Maximizing natural light and privacy"
+    },
+    {
+      "id": 59,
+      "src": "https://images.unsplash.com/photo-1600566753376-12c8ab8d5bc2?w=800&auto=format&fit=crop",
+      "alt": "Rooftop garden",
+      "title": "Urban Gardening",
+      "description": "Creating green spaces in unexpected places"
+    },
+    {
+      "id": 60,
+      "src": "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&auto=format&fit=crop",
+      "alt": "Color theory in interior design",
+      "title": "Color Psychology",
+      "description": "Using color to influence mood and perception"
+    }
+  ]
+}
