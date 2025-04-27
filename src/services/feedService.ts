@@ -1,6 +1,29 @@
 import injectAdsWithFibonacci from '../utils/feedUtils';
 import type { AdItem, FeedItem, ImageItem } from '../utils/feedUtils';
+import type { VideoItem } from '../utils/types';
 import { fetchMultipleUnsplashImages } from '../utils/unsplashService';
+
+/**
+ * Loads image data and video from current.json
+ *
+ * @returns Promise containing an object with images array and video object
+ */
+const loadCurrentData = async (): Promise<{ images: ImageItem[]; video: VideoItem }> => {
+  try {
+    const response = await fetch('/src/data/current.json');
+    if (!response.ok) {
+      throw new Error('Failed to load current data');
+    }
+    const data = await response.json();
+    return {
+      images: data.images,
+      video: data.video,
+    };
+  } catch (error) {
+    console.error('Error loading current data:', error);
+    return { images: [], video: null as unknown as VideoItem };
+  }
+};
 
 /**
  * Loads image data from current.json
@@ -9,15 +32,48 @@ import { fetchMultipleUnsplashImages } from '../utils/unsplashService';
  */
 const loadImages = async (): Promise<ImageItem[]> => {
   try {
-    const response = await fetch('/src/data/current.json');
-    if (!response.ok) {
-      throw new Error('Failed to load images');
-    }
-    const data = await response.json();
+    const data = await loadCurrentData();
     return data.images;
   } catch (error) {
     console.error('Error loading images:', error);
     return [];
+  }
+};
+
+/**
+ * Loads the video from current.json
+ *
+ * @returns Promise containing the video object
+ */
+const loadVideo = async (): Promise<VideoItem> => {
+  try {
+    const data = await loadCurrentData();
+    return data.video;
+  } catch (error) {
+    console.error('Error loading video:', error);
+    return null as unknown as VideoItem;
+  }
+};
+
+/**
+ * Loads image data and video from next.json
+ *
+ * @returns Promise containing an object with images array and video object
+ */
+const loadNextData = async (): Promise<{ images: ImageItem[]; video: VideoItem }> => {
+  try {
+    const response = await fetch('/src/data/next.json');
+    if (!response.ok) {
+      throw new Error('Failed to load next data');
+    }
+    const data = await response.json();
+    return {
+      images: data.images,
+      video: data.video,
+    };
+  } catch (error) {
+    console.error('Error loading next data:', error);
+    return { images: [], video: null as unknown as VideoItem };
   }
 };
 
@@ -75,4 +131,24 @@ const loadFeedData = async (): Promise<FeedItem[]> => {
   }
 };
 
-export { loadFeedData, loadImages, loadAds };
+/**
+ * Loads and merges next feed data (images, video, and ads)
+ *
+ * @returns Promise containing video and merged feed items from the next dataset
+ */
+const loadNextFeedData = async (): Promise<{ feedItems: FeedItem[]; video: VideoItem }> => {
+  try {
+    const [nextData, ads] = await Promise.all([loadNextData(), loadAds()]);
+    const { images, video } = nextData;
+    const feedItems = injectAdsWithFibonacci(images, ads) as FeedItem[];
+    return {
+      feedItems,
+      video,
+    };
+  } catch (error) {
+    console.error('Error loading next feed data:', error);
+    return { feedItems: [], video: null as unknown as VideoItem };
+  }
+};
+
+export { loadFeedData, loadImages, loadAds, loadNextFeedData, loadVideo };
