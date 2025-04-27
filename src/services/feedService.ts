@@ -78,6 +78,28 @@ const loadNextData = async (): Promise<{ images: ImageItem[]; video: VideoItem }
 };
 
 /**
+ * Loads image data and video from prev.json
+ *
+ * @returns Promise containing an object with images array and video object
+ */
+const loadPrevData = async (): Promise<{ images: ImageItem[]; video: VideoItem }> => {
+  try {
+    const response = await fetch('/src/data/prev.json');
+    if (!response.ok) {
+      throw new Error('Failed to load previous data');
+    }
+    const data = await response.json();
+    return {
+      images: data.images,
+      video: data.video,
+    };
+  } catch (error) {
+    console.error('Error loading previous data:', error);
+    return { images: [], video: null as unknown as VideoItem };
+  }
+};
+
+/**
  * Loads advertisement data from advertisement.json
  *
  * @returns Promise containing array of ad items
@@ -151,4 +173,24 @@ const loadNextFeedData = async (): Promise<{ feedItems: FeedItem[]; video: Video
   }
 };
 
-export { loadFeedData, loadImages, loadAds, loadNextFeedData, loadVideo };
+/**
+ * Loads and merges previous feed data (images, video, and ads)
+ *
+ * @returns Promise containing video and merged feed items from the previous dataset
+ */
+const loadPrevFeedData = async (): Promise<{ feedItems: FeedItem[]; video: VideoItem }> => {
+  try {
+    const [prevData, ads] = await Promise.all([loadPrevData(), loadAds()]);
+    const { images, video } = prevData;
+    const feedItems = injectAdsWithFibonacci(images, ads) as FeedItem[];
+    return {
+      feedItems,
+      video,
+    };
+  } catch (error) {
+    console.error('Error loading previous feed data:', error);
+    return { feedItems: [], video: null as unknown as VideoItem };
+  }
+};
+
+export { loadFeedData, loadImages, loadAds, loadNextFeedData, loadVideo, loadPrevFeedData };
