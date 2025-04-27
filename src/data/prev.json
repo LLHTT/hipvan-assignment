@@ -12,14 +12,42 @@
       "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop",
       "alt": "Art deco inspired living room",
       "title": "Art Deco Style",
-      "description": "Geometric patterns and bold colors"
+      "description": "Geometric patterns and bold colors",
+      "tags": [
+        {
+          "x": 35,
+          "y": 45,
+          "label": "Art Deco Lamp",
+          "price": "$219"
+        },
+        {
+          "x": 70,
+          "y": 65,
+          "label": "Velvet Armchair",
+          "price": "$499"
+        }
+      ]
     },
     {
       "id": 42,
       "src": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&auto=format&fit=crop",
       "alt": "Home entertainment system",
       "title": "Home Theater",
-      "description": "Creating the ultimate movie experience at home"
+      "description": "Creating the ultimate movie experience at home",
+      "tags": [
+        {
+          "x": 50,
+          "y": 40,
+          "label": "55\" QLED TV",
+          "price": "$1,299"
+        },
+        {
+          "x": 25,
+          "y": 70,
+          "label": "Soundbar",
+          "price": "$349"
+        }
+      ]
     },
     {
       "id": 43,
@@ -33,7 +61,15 @@
       "src": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&auto=format&fit=crop",
       "alt": "Luxurious bedroom",
       "title": "Master Suite",
-      "description": "Creating a hotel-like bedroom experience"
+      "description": "Creating a hotel-like bedroom experience",
+      "tags": [
+        {
+          "x": 60,
+          "y": 65,
+          "label": "Luxury Duvet Set",
+          "price": "$179"
+        }
+      ]
     },
     {
       "id": 45,
@@ -54,7 +90,21 @@
       "src": "https://images.unsplash.com/photo-1609347744403-c811337f8f01?w=800&auto=format&fit=crop",
       "alt": "Japanese inspired interior",
       "title": "Japanese Minimalism",
-      "description": "Zen-inspired tranquil spaces"
+      "description": "Zen-inspired tranquil spaces",
+      "tags": [
+        {
+          "x": 45,
+          "y": 55,
+          "label": "Tatami Mat",
+          "price": "$189"
+        },
+        {
+          "x": 70,
+          "y": 35,
+          "label": "Bamboo Privacy Screen",
+          "price": "$129"
+        }
+      ]
     },
     {
       "id": 48,

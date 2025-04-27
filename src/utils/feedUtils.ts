@@ -5,6 +5,12 @@ export interface ImageItem {
   title?: string;
   description?: string;
   type?: 'image';
+  tags?: Array<{
+    x: number;
+    y: number;
+    label: string;
+    price: string;
+  }>;
 }
 
 export interface AdItem {

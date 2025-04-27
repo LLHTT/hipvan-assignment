@@ -12,7 +12,21 @@
       "src": "https://images.unsplash.com/photo-1517097454893-e82cc34fe2f0?w=800&auto=format&fit=crop",
       "alt": "Industrial style loft",
       "title": "Industrial Chic",
-      "description": "Raw materials and exposed architectural elements"
+      "description": "Raw materials and exposed architectural elements",
+      "tags": [
+        {
+          "x": 30,
+          "y": 55,
+          "label": "Metal Pendant Light",
+          "price": "$129"
+        },
+        {
+          "x": 65,
+          "y": 70,
+          "label": "Industrial Coffee Table",
+          "price": "$299"
+        }
+      ]
     },
     {
       "id": 22,
@@ -26,14 +40,42 @@
       "src": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&auto=format&fit=crop",
       "alt": "Coastal style bedroom",
       "title": "Beach Vibes",
-      "description": "Light and airy coastal inspired design"
+      "description": "Light and airy coastal inspired design",
+      "tags": [
+        {
+          "x": 40,
+          "y": 50,
+          "label": "Coastal Bedding Set",
+          "price": "$159"
+        },
+        {
+          "x": 70,
+          "y": 65,
+          "label": "Rattan Nightstand",
+          "price": "$179"
+        }
+      ]
     },
     {
       "id": 24,
       "src": "https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=800&auto=format&fit=crop",
       "alt": "Smart kitchen appliances",
       "title": "Tech Kitchen",
-      "description": "Modern kitchen with integrated technology"
+      "description": "Modern kitchen with integrated technology",
+      "tags": [
+        {
+          "x": 25,
+          "y": 40,
+          "label": "Smart Refrigerator",
+          "price": "$2,199"
+        },
+        {
+          "x": 60,
+          "y": 45,
+          "label": "Voice-Controlled Mixer",
+          "price": "$349"
+        }
+      ]
     },
     {
       "id": 25,
@@ -47,7 +89,21 @@
       "src": "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=800&auto=format&fit=crop",
       "alt": "Home gym setup",
       "title": "Home Fitness",
-      "description": "Dedicated space for workout routines"
+      "description": "Dedicated space for workout routines",
+      "tags": [
+        {
+          "x": 35,
+          "y": 60,
+          "label": "Adjustable Dumbbells",
+          "price": "$279"
+        },
+        {
+          "x": 70,
+          "y": 40,
+          "label": "Smart Fitness Mirror",
+          "price": "$1,499"
+        }
+      ]
     },
     {
       "id": 27,
