@@ -235,7 +235,7 @@ const Feed = () => {
             <span>Refreshing...</span>
           </div>
         ) : (
-          <span>Pull down to refresh</span>
+          <span className="text-gray-600">Pull down to refresh</span>
         )}
       </div>
 
