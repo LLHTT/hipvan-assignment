@@ -1,3 +1,5 @@
+import { FALLBACK_IMAGE_URL } from './constants';
+
 interface UnsplashImageResponse {
   urls: {
     raw: string;
@@ -28,7 +30,7 @@ export const fetchMultipleUnsplashImages = async (
 
     if (!accessKey) {
       return Array(count).fill({
-        url: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800',
+        url: FALLBACK_IMAGE_URL,
         alt: 'Fallback image from Unsplash',
       });
     }
@@ -59,7 +61,7 @@ export const fetchMultipleUnsplashImages = async (
   } catch (error) {
     console.error('Error fetching multiple images from Unsplash API:', error);
     return Array(count).fill({
-      url: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800',
+      url: FALLBACK_IMAGE_URL,
       alt: 'Fallback image from Unsplash',
     });
   }

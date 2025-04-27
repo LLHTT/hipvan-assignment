@@ -1,10 +1,15 @@
 import type { AdItem } from '../utils/feedUtils';
+import ImageWithFallback from './ImageWithFallback';
+import { FALLBACK_IMAGE_URL } from '../utils/constants';
 
 interface AdCardProps {
   ad: AdItem;
 }
 
 const AdCard = ({ ad }: AdCardProps) => {
+  const imageSource = ad.imageSrc || FALLBACK_IMAGE_URL;
+  const altText = ad.imageAlt || ad.title || 'Advertisement';
+
   return (
     <div className="relative bg-white rounded-lg shadow-md overflow-hidden border-2 border-yellow-300">
       {/* Sponsored tag */}
@@ -14,9 +19,10 @@ const AdCard = ({ ad }: AdCardProps) => {
 
       {/* Image from Unsplash */}
       <div className="h-48 w-full overflow-hidden">
-        <img
-          src={ad.imageSrc}
-          alt={ad.imageAlt || ad.title}
+        <ImageWithFallback
+          src={imageSource}
+          alt={altText}
+          fallbackSrc={FALLBACK_IMAGE_URL}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
           loading="lazy"
         />
