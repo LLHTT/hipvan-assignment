@@ -1,4 +1,4 @@
-import { FALLBACK_IMAGE_URL } from './constants';
+import { FALLBACK_IMAGE_URL } from 'src/utils/constants';
 
 interface UnsplashImageResponse {
   urls: {

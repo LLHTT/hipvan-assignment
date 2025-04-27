@@ -1,7 +1,7 @@
 import injectAdsWithFibonacci from '../utils/feedUtils';
 import type { AdItem, FeedItem, ImageItem } from '../utils/feedUtils';
 import type { VideoItem } from '../utils/types';
-import { fetchMultipleUnsplashImages } from '../utils/unsplashService';
+import { fetchMultipleUnsplashImages } from './unsplashService';
 
 /**
  * Loads image data and video from current.json
